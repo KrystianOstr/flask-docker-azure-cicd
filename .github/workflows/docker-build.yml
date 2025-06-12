@@ -24,8 +24,8 @@ jobs:
       
     - name: Build Docker image
       run: |
-        docker build -t ghcr.io/${{github.repository}}:latest .
+        docker build -t ghcr.io/krystianostr/flask-docker-azure-cicd:latest .
 
     - name: Push Docker image
       run: |
-        docker push bhcr.io/${{github.repository}}:latest
+        docker push ghcr.io/krystianostr/flask-docker-azure-cicd:latest
